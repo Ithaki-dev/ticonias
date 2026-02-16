@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ticonias - Artesanías que conectan cultura, arte y comunidad. Descubre productos artesanales hechos a mano y únete al Colectivo Motivarte.">
+    <meta name="keywords" content="artesanías, productos artesanales, arte, cultura, comunidad, Ticonias, Motivarte">
+    <meta name="author" content="Ticonias">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Ticonias - Artesanías y Cultura">
+    <meta property="og:description" content="Artesanías que conectan cultura, arte y comunidad">
+    <meta property="og:type" content="website">
+    
+    <title>Ticonias - Artesanías que conectan cultura, arte y comunidad</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="styles.css" as="style">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+</head>
+<body>
+    
+    <!-- ============================== -->
+    <!-- HEADER / NAVBAR -->
+    <!-- ============================== -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <!-- Logo -->
+            <a href="#" class="navbar__logo">
+                <img src="assets/icons/ticonias_icon.jpg" alt="Ticonias Logo" width="40" height="40">
+                <span>Ticonias</span>
+            </a>
+
+            <!-- Navigation Menu -->
+            <div class="navbar__menu" id="navMenu">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="#inicio" class="navbar__link active">Inicio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#catalogo" class="navbar__link">Catálogo</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#motivarte" class="navbar__link">Comunidad Motivarte</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#nosotros" class="navbar__link">Nosotros</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#contacto" class="navbar__link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Hamburger Menu Toggle -->
+            <div class="navbar__toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================== -->
+    <!-- HERO SECTION -->
+    <!-- ============================== -->
+    <section class="hero" id="inicio">
+        <div class="hero__bg">
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__content container">
+            <h1 class="hero__title animate-fade-in">
+                Artesanías que conectan<br>
+                <span class="hero__title--highlight">cultura, arte y comunidad</span>
+            </h1>
+            <p class="hero__description animate-fade-in">
+                Descubre piezas únicas creadas con amor y dedicación,<br>
+                donde cada artesanía cuenta una historia
+            </p>
+            <a href="#catalogo" class="hero__cta btn btn--primary animate-fade-in">
+                Ver catálogo
+            </a>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="hero__scroll">
+            <span>Desliza</span>
+            <div class="hero__scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- CATÁLOGO DE PRODUCTOS -->
+    <!-- ============================== -->
+    <section class="catalog section" id="catalogo">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Nuestro Catálogo</h2>
+                <p class="section__subtitle">
+                    Productos artesanales hechos con pasión y dedicación
+                </p>
+            </div>
+
+            <!-- Filtros de categoría -->
+            <div class="catalog__filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="Accesorios">Accesorios</button>
+                <button class="filter-btn" data-filter="Decoración">Decoración</button>
+                <button class="filter-btn" data-filter="Textiles">Textiles</button>
+                <button class="filter-btn" data-filter="Cerámica">Cerámica</button>
+            </div>
+
+            <!-- Grid de productos (se llena dinámicamente) -->
+            <div class="catalog__grid" id="catalogGrid">
+                <!-- Los productos se cargan desde JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- COMUNIDAD MOTIVARTE -->
+    <!-- ============================== -->
+    <section class="motivarte section" id="motivarte">
+        <div class="container">
+            <div class="motivarte__content">
+                <div class="motivarte__image">
+                    <div class="motivarte__image-wrapper">
+                        <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="400" fill="#6B8E6F" opacity="0.1"/>
+                            <circle cx="200" cy="150" r="60" fill="#6B8E6F" opacity="0.3"/>
+                            <circle cx="140" cy="250" r="40" fill="#C17C5D" opacity="0.3"/>
+                            <circle cx="260" cy="250" r="40" fill="#C17C5D" opacity="0.3"/>
+                            <circle cx="200" cy="300" r="50" fill="#8B6F47" opacity="0.3"/>
+                            <path d="M200 150 L140 250 M200 150 L260 250 M140 250 L200 300 M260 250 L200 300" 
+                                  stroke="#6B8E6F" stroke-width="3" opacity="0.5"/>
+                            <text x="200" y="360" font-size="24" fill="#6B8E6F" text-anchor="middle" font-weight="bold">
+                                MOTIVARTE
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="motivarte__text">
+                    <span class="motivarte__badge">Comunidad</span>
+                    <h2 class="motivarte__title">
+                        Colectivo <span class="text-highlight">Motivarte</span>
+                    </h2>
+                    <p class="motivarte__description">
+                        Más que una empresa, somos una comunidad que cree en el poder transformador del arte. 
+                        El Colectivo Motivarte nace con el propósito de crear espacios donde la creatividad 
+                        y la expresión cultural florezcan.
+                    </p>
+
+                    <div class="motivarte__objectives">
+                        <div class="objective-card">
+                            <div class="objective-card__icon">🎨</div>
+                            <h3 class="objective-card__title">Fomentar el Arte</h3>
+                            <p class="objective-card__text">
+                                Promovemos la cultura y el arte en nuestra comunidad a través de talleres y eventos
+                            </p>
+                        </div>
+
+                        <div class="objective-card">
+                            <div class="objective-card__icon">🤝</div>
+                            <h3 class="objective-card__title">Apoyo a Artistas</h3>
+                            <p class="objective-card__text">
+                                Brindamos soporte y visibilidad a artistas locales para que compartan su talento
+                            </p>
+                        </div>
+
+                        <div class="objective-card">
+                            <div class="objective-card__icon">🌱</div>
+                            <h3 class="objective-card__title">Espacios de Expresión</h3>
+                            <p class="objective-card__text">
+                                Creamos lugares seguros donde la creatividad y la expresión artística son bienvenidas
+                            </p>
+                        </div>
+
+                        <div class="objective-card">
+                            <div class="objective-card__icon">💫</div>
+                            <h3 class="objective-card__title">Fortalecer Comunidad</h3>
+                            <p class="objective-card__text">
+                                Unimos a las personas a través del arte, creando lazos y experiencias significativas
+                            </p>
+                        </div>
+                    </div>
+
+                    <a href="#contacto" class="btn btn--secondary">
+                        Únete a Motivarte
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- NOSOTROS -->
+    <!-- ============================== -->
+    <section class="about section" id="nosotros">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Nosotros</h2>
+                <p class="section__subtitle">
+                    Conoce nuestra historia y lo que nos inspira cada día
+                </p>
+            </div>
+
+            <div class="about__content">
+                <div class="about__card">
+                    <div class="about__card-icon">🏺</div>
+                    <h3 class="about__card-title">¿Qué es Ticonias?</h3>
+                    <p class="about__card-text">
+                        Somos una empresa dedicada a la creación y comercialización de productos artesanales 
+                        auténticos, donde cada pieza refleja la riqueza cultural y el talento de nuestros artesanos. 
+                        Creemos que las artesanías son más que objetos: son historias, tradiciones y conexiones humanas.
+                    </p>
+                </div>
+
+                <div class="about__card">
+                    <div class="about__card-icon">🎯</div>
+                    <h3 class="about__card-title">Nuestra Misión</h3>
+                    <p class="about__card-text">
+                        Conectar el arte artesanal con las personas, preservando técnicas tradicionales mientras 
+                        innovamos en diseño. Buscamos empoderar a artistas locales y crear un impacto positivo 
+                        en nuestra comunidad a través de productos de calidad que cuentan historias.
+                    </p>
+                </div>
+
+                <div class="about__card">
+                    <div class="about__card-icon">🌟</div>
+                    <h3 class="about__card-title">Nuestra Visión</h3>
+                    <p class="about__card-text">
+                        Ser reconocidos como un referente en artesanías que fusionan tradición y modernidad, 
+                        expandiendo el Colectivo Motivarte para crear una red de artistas y amantes del arte 
+                        que transforme comunidades a través de la creatividad y la expresión cultural.
+                    </p>
+                </div>
+
+                <div class="about__card">
+                    <div class="about__card-icon">❤️</div>
+                    <h3 class="about__card-title">Arte y Cultura</h3>
+                    <p class="about__card-text">
+                        Nuestra conexión con el arte va más allá de lo comercial. Cada producto es una manifestación 
+                        de identidad cultural, un puente entre generaciones y una forma de mantener vivas las 
+                        tradiciones mientras celebramos la innovación y la creatividad contemporánea.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- CONTACTO -->
+    <!-- ============================== -->
+    <section class="contact section" id="contacto">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Contáctanos</h2>
+                <p class="section__subtitle">
+                    ¿Tienes preguntas? Nos encantaría escucharte
+                </p>
+            </div>
+
+            <div class="contact__content">
+                <!-- Formulario -->
+                <div class="contact__form-wrapper">
+                    <form class="contact__form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre completo</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-input" 
+                                placeholder="Tu nombre"
+                                required
+                            >
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                placeholder="tu@email.com"
+                                required
+                            >
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-input form-textarea" 
+                                placeholder="Escribe tu mensaje aquí..."
+                                rows="5"
+                                required
+                            ></textarea>
+                            <span class="form-error" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full">
+                            Enviar mensaje
+                        </button>
+
+                        <div class="form-success" id="formSuccess">
+                            ✓ ¡Mensaje enviado con éxito! Te responderemos pronto.
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Información de contacto -->
+                <div class="contact__info">
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-item__content">
+                            <h4 class="contact-item__title">Email</h4>
+                            <a href="mailto:contacto@ticonias.com" class="contact-item__link">
+                                contacto@ticonias.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-item__content">
+                            <h4 class="contact-item__title">WhatsApp</h4>
+                            <a href="https://wa.me/50612345678" class="contact-item__link" target="_blank" rel="noopener">
+                                +506 1234 5678
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-item__content">
+                            <h4 class="contact-item__title">Horario</h4>
+                            <p class="contact-item__text">
+                                Lunes a Viernes<br>
+                                9:00 AM - 6:00 PM
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact__social">
+                        <h4 class="contact__social-title">Síguenos</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="white"></path>
+                                    <circle cx="17.5" cy="6.5" r="1.5" fill="white"></circle>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Pinterest">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12c0 4.26 2.67 7.9 6.43 9.36-.09-.79-.17-2.01.04-2.87.19-.78 1.23-5.19 1.23-5.19s-.31-.63-.31-1.56c0-1.46.85-2.55 1.91-2.55.9 0 1.34.68 1.34 1.49 0 .91-.58 2.27-.88 3.53-.25 1.06.53 1.92 1.58 1.92 1.9 0 3.36-2 3.36-4.89 0-2.56-1.84-4.35-4.46-4.35-3.04 0-4.82 2.28-4.82 4.64 0 .92.35 1.9.79 2.43.09.1.1.19.07.3-.08.32-.26 1.04-.29 1.19-.04.19-.15.23-.34.14-1.33-.62-2.16-2.56-2.16-4.12 0-3.36 2.44-6.45 7.04-6.45 3.7 0 6.57 2.64 6.57 6.16 0 3.68-2.32 6.64-5.54 6.64-1.08 0-2.1-.56-2.45-1.22 0 0-.54 2.05-.67 2.55-.24.95-.9 2.14-1.34 2.87A10 10 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- FOOTER -->
+    <!-- ============================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <!-- Logo y descripción -->
+                <div class="footer__section">
+                    <a href="#" class="footer__logo">
+                        <img src="assets/icons/ticonias_icon.jpg" alt="Ticonias Logo" width="36" height="36">
+                        <span>Ticonias</span>
+                    </a>
+                    <p class="footer__description">
+                        Artesanías que conectan cultura, arte y comunidad. 
+                        Productos únicos hechos con pasión.
+                    </p>
+                </div>
+
+                <!-- Enlaces rápidos -->
+                <div class="footer__section">
+                    <h4 class="footer__title">Enlaces Rápidos</h4>
+                    <ul class="footer__links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#catalogo">Catálogo</a></li>
+                        <li><a href="#motivarte">Comunidad Motivarte</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Comunidad -->
+                <div class="footer__section">
+                    <h4 class="footer__title">Comunidad</h4>
+                    <ul class="footer__links">
+                        <li><a href="#motivarte">Colectivo Motivarte</a></li>
+                        <li><a href="#">Talleres</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="footer__section">
+                    <h4 class="footer__title">Síguenos</h4>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="var(--color-bg)"></path>
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="var(--color-bg)"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Pinterest">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12c0 4.26 2.67 7.9 6.43 9.36-.09-.79-.17-2.01.04-2.87.19-.78 1.23-5.19 1.23-5.19s-.31-.63-.31-1.56c0-1.46.85-2.55 1.91-2.55.9 0 1.34.68 1.34 1.49 0 .91-.58 2.27-.88 3.53-.25 1.06.53 1.92 1.58 1.92 1.9 0 3.36-2 3.36-4.89 0-2.56-1.84-4.35-4.46-4.35-3.04 0-4.82 2.28-4.82 4.64 0 .92.35 1.9.79 2.43.09.1.1.19.07.3-.08.32-.26 1.04-.29 1.19-.04.19-.15.23-.34.14-1.33-.62-2.16-2.56-2.16-4.12 0-3.36 2.44-6.45 7.04-6.45 3.7 0 6.57 2.64 6.57 6.16 0 3.68-2.32 6.64-5.54 6.64-1.08 0-2.1-.56-2.45-1.22 0 0-.54 2.05-.67 2.55-.24.95-.9 2.14-1.34 2.87A10 10 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2026 Ticonias. Todos los derechos reservados.
+                </p>
+                <div class="footer__bottom-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
