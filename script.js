@@ -55,12 +55,6 @@ const products = [
         image: "https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=400&h=400&fit=crop"
     },
     {
-        name: "Manta Artesanal",
-        description: "Manta tejida en telar tradicional con lana natural",
-        category: "Textiles",
-        image: "https://images.unsplash.com/photo-1629198735700-9426f58b550d?w=400&h=400&fit=crop"
-    },
-    {
         name: "Set de Tazas",
         description: "Juego de 4 tazas de cerámica pintadas a mano",
         category: "Cerámica",
